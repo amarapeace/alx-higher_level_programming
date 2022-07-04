@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 def no_c(my_string):
     chars = len(my_string)
     buf = ""
