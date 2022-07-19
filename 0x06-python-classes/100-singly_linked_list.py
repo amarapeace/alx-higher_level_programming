@@ -31,7 +31,7 @@ class Node:
         """Get/set the next_node of the Node."""
         return (self.__next_node)
 
-@next_node.setter
+    @next_node.setter
     def next_node(self, value):
         if not isinstance(value, Node) and value is not None:
             raise TypeError("next_node must be a Node object")
@@ -67,7 +67,7 @@ class SinglyLinkedList:
             new.next_node = tmp.next_node
             tmp.next_node = new
 
-def __str__(self):
+    def __str__(self):
         """Define the print() representation of a SinglyLinkedList."""
         values = []
         tmp = self.__head
