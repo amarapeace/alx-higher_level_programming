@@ -4,10 +4,13 @@ Contains the number_of_lines function
 """
 
 
-def number_of_lines(filename=""):
-    """returns the number of lines of a text file"""
-    with open(filename, 'r', encoding='utf8') as f:
-        i = 0
-        for line in f:
-            i += 1
-        return i
+def write_file(filename="", text=""):
+    """uses open() and write() to write string to a text file.
+    Return:
+        no of characters read
+    Args:
+        filename: text file to write into
+        text (str): string to write to text file
+    """
+    with open(filename, 'w', encoding='utf8') as file:
+        return file.write(text)
