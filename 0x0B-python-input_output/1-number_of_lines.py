@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-"""
-Contains the number_of_lines function
-"""
+"""writes a string to a text file(UTF8) and
+    returns the number of chars written"""
+
 
 
 def write_file(filename="", text=""):
